@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda Natural</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Encabezado -->
+  <header>
+    <div class="container">
+      <h1>Tienda Natural</h1>
+      <nav>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <li class="cart-link"><a href="#carrito">🛒 Carrito <span id="cart-count">0</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Sección de Inicio -->
+  <section id="inicio">
+    <div class="hero">
+      <h2>Bienvenido a Tienda Natural</h2>
+      <p>Descubre el poder de la naturaleza para tu bienestar. Productos orgánicos y sostenibles.</p>
+      <a href="#productos" class="cta-button">Explorar productos</a>
+    </div>
+  </section>
+
+  <!-- Sección de Productos -->
+  <section id="productos">
+    <h2>Nuestros Productos</h2>
+    <div class="product-container">
+      <!-- Producto 1 -->
+      <div class="product">
+        <img src="producto1.jpg" alt="Aceite esencial">
+        <h3>Aceite esencial</h3>
+        <p>Un aceite puro para relajación y bienestar.</p>
+        <p class="price">$15.00 USD</p>
+        <button class="add-to-cart" data-name="Aceite esencial" data-price="15.00">Agregar al carrito</button>
+      </div>
+      <!-- Producto 2 -->
+      <div class="product">
+        <img src="producto2.jpg" alt="Crema natural">
+        <h3>Crema natural</h3>
+        <p>Hidratación perfecta con ingredientes naturales.</p>
+        <p class="price">$20.00 USD</p>
+        <button class="add-to-cart" data-name="Crema natural" data-price="20.00">Agregar al carrito</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre Nosotros -->
+  <section id="nosotros">
+    <h2>Sobre Nosotros</h2>
+    <p>Somos una tienda comprometida con ofrecer tratamientos naturales que cuiden tu salud y el planeta.</p>
+  </section>
+
+  <!-- Formulario de Contacto -->
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <form>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <!-- Carrito -->
+  <section id="carrito">
+    <h2>Carrito de Compras</h2>
+    <div id="cart-items">
+      <p>Tu carrito está vacío.</p>
+    </div>
+    <h3>Total: $<span id="total">0.00</span></h3>
+    <button id="checkout" class="checkout-button" disabled>Finalizar Compra</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
